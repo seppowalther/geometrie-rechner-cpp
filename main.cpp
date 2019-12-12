@@ -26,14 +26,14 @@ int main()
     
     // Rechteck
     
-    if (c_Form == 'R')
+    if ((c_Form == 'R') || (c_Form == 'r'))
     {
         cout << "Gewählte Form: Rechteck" << endl;
         cout << "Welche geometrische Größe soll ermittelt werden?" << endl;
         cout << "'F' für Flächeninhalt, 'U' für Umfang" << endl;
         cin >> c_Groesse;
         
-        if (c_Groesse == 'F')
+        if ((c_Groesse == 'F') || (c_Groesse == 'f'))
         {
             cout << "Gewählte Größe: Flächeninhalt" << endl;
             cout << "Geben Sie nun die Länge des Rechtecks (in cm) ein." << endl;
@@ -45,7 +45,7 @@ int main()
             
             cout << "Der Flächeninhalt des Rechtecks beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2). " << endl;
         }
-        else if (c_Groesse == 'U')
+        else if ((c_Groesse == 'U') || (c_Groesse == 'u'))
         {
             cout << "Gewählte Größe: Umfang" << endl;
             cout << "Geben Sie nun die Länge des Rechtecks (in cm) ein." << endl;
@@ -62,14 +62,14 @@ int main()
     
     // Dreieck
     
-    else if (c_Form == 'D')
+    else if ((c_Form == 'D') || (c_Form == 'd'))
     {
         cout << "Gewählte Form: Dreieck" << endl;
         cout << "Welche geometrische Größe soll ermittelt werden?" << endl;
         cout << "'F' für Flächeninhalt, 'U' für Umfang" << endl;
         cin >> c_Groesse;
         
-        if (c_Groesse == 'F')
+        if ((c_Groesse == 'F') || (c_Groesse == 'f'))
         {
             cout << "Gewählte Größe: Flächeninhalt" << endl;
             cout << "Geben Sie nun die Breite des Dreiecks (in cm) ein." << endl;
@@ -81,7 +81,7 @@ int main()
             
             cout << "Der Flächeninhalt des Dreiecks beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2)." << endl;
         }
-        else if (c_Groesse == 'U')
+        else if ((c_Groesse == 'U') || (c_Groesse == 'u'))
         {
             cout << "Gewählte Größe: Umfang" << endl;
             cout << "Geben Sie nun die Länge der 1. Seite des Dreiecks (in cm) ein." << endl;
@@ -99,14 +99,14 @@ int main()
         // Kreis
         
     }
-    else if (c_Form == 'K')
+    else if ((c_Form == 'K') || (c_Form == 'k'))
     {
         cout << "Gewählte Form: Kreis" << endl;
         cout << "Welche geometrische Größe soll ermittelt werden?" << endl;
         cout << "'F' für Flächeninhalt, 'U' für Umfang" << endl;
         cin >> c_Groesse;
         
-        if (c_Groesse == 'F')
+        if ((c_Groesse == 'F') || (c_Groesse == 'f'))
         {
             cout << "Gewählte Größe: Flächeninhalt" << endl;
             cout << "Geben Sie nun den Radius des Kreises (in cm) ein." << endl;
@@ -116,7 +116,7 @@ int main()
             
             cout << "Der Flächeninhalt des Kreises beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2)." << endl;
         }
-        else if (c_Groesse == 'U')
+        else if ((c_Groesse == 'U') || (c_Groesse == 'u'))
         {
             cout << "Gewählte Größe: Umfang" << endl;
             cout << "Geben Sie nun den Radius des Kreises (in cm) ein." << endl;
@@ -131,14 +131,14 @@ int main()
     
     // Quader
     
-    else if (c_Form == 'Q')
+    else if ((c_Form == 'Q') || (c_Form == 'q'))
     {
         cout << "Gewählte Form: Quader" << endl;
         cout << "Welche geometrische Größe soll ermittelt werden?" << endl;
         cout << "'V' für Volumen, 'O' für Oberflächeninhalt" << endl;
         cin >> c_Groesse;
         
-        if (c_Groesse == 'V')
+        if ((c_Groesse == 'V') || (c_Groesse == 'v'))
         {
             cout << "Gewählte Größe: Volumen" << endl;
             cout << "Geben Sie nun die Breite des Quaders (in cm) ein." << endl;
@@ -152,7 +152,7 @@ int main()
             
             cout << "Das Volumen des Quaders beträgt " << i_ergebnis1 << " Kubikzentimeter (cm3)." << endl;
         }
-        else if (c_Groesse == 'O')
+        else if ((c_Groesse == 'O') || (c_Groesse == 'o'))
         {
             cout << "Gewählte Größe: Oberflächeninhalt" << endl;
             cout << "Geben Sie nun die Breite des Quaders (in cm) ein." << endl;
@@ -171,14 +171,14 @@ int main()
     
     // Zylinder
     
-    else if (c_Form == 'Z')
+    else if ((c_Form == 'Z') || (c_Form == 'z'))
     {
         cout << "Gewählte Form: Zylinder" << endl;
         cout << "Welche geometrische Größe soll ermittelt werden?" << endl;
         cout << "'V' für Volumen, 'O' für Oberflächeninhalt" << endl;
         cin >> c_Groesse;
         
-        if (c_Groesse == 'V')
+        if ((c_Groesse == 'V') || (c_Groesse == 'v'))
         {
             cout << "Gewählte Größe: Volumen" << endl;
             cout << "Geben Sie nun den Radius des Zylinders (in cm) ein." << endl;
@@ -190,7 +190,7 @@ int main()
             
             cout << "Das Volumen des Zylinders beträgt " << i_ergebnis1 << " Kubikzentimeter (cm3)." << endl;
         }
-        else if (c_Groesse == 'O')
+        else if ((c_Groesse == 'O') || (c_Groesse == 'o'))
         {
             cout << "Gewählte Größe: Oberflächeninhalt" << endl;
             cout << "Geben Sie nun den Radius des Zylinders (in cm) ein." << endl;
@@ -208,14 +208,14 @@ int main()
     
     // Kugel
     
-    else if (c_Form == 'X')
+    else if ((c_Form == 'X') || (c_Form == 'x'))
     {
         cout << "Gewählte Form: Kugel" << endl;
         cout << "Welche geometrische Größe soll ermittelt werden?" << endl;
         cout << "'V' für Volumen, 'O' für Oberflächeninhalt" << endl;
         cin >> c_Groesse;
         
-        if (c_Groesse == 'V')
+        if ((c_Groesse == 'V') || (c_Groesse == 'v'))
         {
             cout << "Gewählte Größe: Volumen" << endl;
             cout << "Geben Sie nun den Radius der Kugel (in cm) ein." << endl;
@@ -225,7 +225,7 @@ int main()
             
             cout << "Das Volumen der Kugel beträgt " << i_ergebnis1 << " Kubikzentimeter (cm3)." << endl;
         }
-        else if (c_Groesse == 'O')
+        else if ((c_Groesse == 'O') || (c_Groesse == 'o'))
         {
             cout << "Gewählte Größe: Oberflächeninhalt" << endl;
             cout << "Geben Sie nun den Radius der Kugel (in cm) ein." << endl;
