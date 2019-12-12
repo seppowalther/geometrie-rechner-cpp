@@ -18,8 +18,12 @@ int main()
     
     
     unsigned int i_ergebnis1;
+
+    cout << "----------------------------------------------------------------" << endl;
     
-    
+    do
+    {
+
     cout << "Um welche geometrische Form handelt es sich?" << endl;
     cout << "'R' für Rechteck, 'D' für Dreieck, 'K' für Kreis, 'Q' für Quader, 'Z' für Zylinder, 'X' für Kugel" << endl;
     cin >> c_Form;
@@ -44,6 +48,7 @@ int main()
             i_ergebnis1 = i_Laenge * i_Breite;
             
             cout << "Der Flächeninhalt des Rechtecks beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2). " << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         else if ((c_Groesse == 'U') || (c_Groesse == 'u'))
         {
@@ -56,6 +61,7 @@ int main()
             i_ergebnis1 = 2 * i_Laenge + 2 * i_Breite;
             
             cout << "Der Umfang des Rechtecks beträgt " << i_ergebnis1 << " Zentimeter (cm). " << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         
     }
@@ -80,6 +86,7 @@ int main()
             i_ergebnis1 = 0.5 * i_Breite * i_Hoehe;
             
             cout << "Der Flächeninhalt des Dreiecks beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         else if ((c_Groesse == 'U') || (c_Groesse == 'u'))
         {
@@ -94,6 +101,7 @@ int main()
             i_ergebnis1 = i_seite1 + i_seite2 + i_seite3;
             
             cout << "Der Umfang des Dreiecks beträgt " << i_ergebnis1 << " Zentimeter (cm)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         
         // Kreis
@@ -115,6 +123,7 @@ int main()
             i_ergebnis1 = (i_radius * i_radius) * d_pi;
             
             cout << "Der Flächeninhalt des Kreises beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         else if ((c_Groesse == 'U') || (c_Groesse == 'u'))
         {
@@ -125,6 +134,7 @@ int main()
             i_ergebnis1 = 2 * i_radius * d_pi;
             
             cout << "Der Umfang des Kreises beträgt " << i_ergebnis1 << " Zentimeter (cm)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         
     }
@@ -151,6 +161,7 @@ int main()
             i_ergebnis1 = (i_Breite * i_Tiefe) * i_Hoehe;
             
             cout << "Das Volumen des Quaders beträgt " << i_ergebnis1 << " Kubikzentimeter (cm3)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         else if ((c_Groesse == 'O') || (c_Groesse == 'o'))
         {
@@ -165,6 +176,7 @@ int main()
             i_ergebnis1 = (2 * i_Breite * i_Tiefe) + (2 * i_Breite * i_Hoehe) + (2 * i_Tiefe * i_Hoehe);
             
             cout << "Der Oberflächeninhalt des Quaders beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
     }
     
@@ -189,6 +201,7 @@ int main()
             i_ergebnis1 = d_pi * (i_radius * i_radius) * i_Hoehe;
             
             cout << "Das Volumen des Zylinders beträgt " << i_ergebnis1 << " Kubikzentimeter (cm3)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         else if ((c_Groesse == 'O') || (c_Groesse == 'o'))
         {
@@ -201,6 +214,7 @@ int main()
             i_ergebnis1 = 2 * d_pi * i_radius * (i_radius + i_Hoehe);
             
             cout << "Der Oberflächeninhalt des Zylinders beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         
     }
@@ -224,6 +238,7 @@ int main()
             i_ergebnis1 = 1.333 * d_pi * (i_radius * i_radius * i_radius);
             
             cout << "Das Volumen der Kugel beträgt " << i_ergebnis1 << " Kubikzentimeter (cm3)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         else if ((c_Groesse == 'O') || (c_Groesse == 'o'))
         {
@@ -234,6 +249,7 @@ int main()
             i_ergebnis1 = 4 * d_pi * (i_radius * i_radius);
             
             cout << "Der Oberflächeninhalt der Kugel beträgt " << i_ergebnis1 << " Quadratzentimeter (cm2)." << endl;
+            cout << "----------------------------------------------------------------" << endl;
         }
         
     }
@@ -242,9 +258,11 @@ int main()
     else
     {
         cout << "Eingabe undeutlich, bitte wiederholen." << endl;
+        cout << "----------------------------------------------------------------" << endl;
     }
     
     // cout << "'F' für Flaecheninhalt, 'U' für"
+    } while (1);
 }
 
 
